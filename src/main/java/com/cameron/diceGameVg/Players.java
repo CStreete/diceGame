@@ -84,6 +84,7 @@ public class Players {
         System.out.println("1) New Game ");
         System.out.println("0) Exit ");
 
+
 //Prints winner message if array size is equal to 1
 } else if (dice.setWinner().size() == 1 && dice.setWinner().contains(i) ) {
 

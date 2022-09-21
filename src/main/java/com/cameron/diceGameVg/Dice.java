@@ -36,18 +36,15 @@ public class Dice {
         score.add(sum);
     }
 
-    // Method for finding winnerIndex & adding to winners array
+    // Method for adding to winners array
     public ArrayList<Integer> setWinner (){
 
         ArrayList<Integer> winnerWinner = new ArrayList<>();
-        int winnerIndex = 0;
          int winner = Collections.max(score);
-        winnerIndex = score.indexOf(winner);
         for (int i = 0; i <score.size() ; i++) {
             if (score.get(i).equals(winner)){
                 winnerWinner.add(i);
             }
-
         }return winnerWinner;
 
     }
