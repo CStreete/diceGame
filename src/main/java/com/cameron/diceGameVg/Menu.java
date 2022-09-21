@@ -44,7 +44,7 @@ while (!exit) {
 
 
             case "0":
-                System.out.println("Thank you for playing Camerons Dice Game  ");
+                System.out.println("Thank you for playing Cameron´s Dice Game  ");
                 System.exit(0);
                 break;
 

@@ -35,7 +35,7 @@ public class Dice {
         }
         sum = rollTotal;
         score.add(sum);
-        return randomNumber ;
+return randomNumber;
     }
 
     // Method for finding winner & adding to winners array
@@ -43,7 +43,7 @@ public class Dice {
 
         ArrayList<Integer> winnerWinner = new ArrayList<>();
         int winnerIndex = 0;
-        int winner = Collections.max(score);
+         int winner = Collections.max(score);
         winnerIndex = score.indexOf(winner);
         for (int i = 0; i <score.size() ; i++) {
             if (score.get(i).equals(winner)){
