@@ -1,7 +1,6 @@
 package com.cameron.diceGameVg;
 
 import java.util.ArrayList;
-
 import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -20,11 +19,11 @@ public class Dice {
     ArrayList<Integer> score = new ArrayList<Integer>();
 
 // Method for rolling dice
-    public int rollDice () {
+    public void rollDice () {
 
         int rollTotal = 0;//Variable declaration
-        for (int j = 0; j <totalRounds;  j++) {
-
+        for (int j = 0; j <totalRounds;  j++) { // Loop for number of rounds
+            // Loop for number of dice
             for (int i = 0; i < numberOfDice ; i++) {
                 randomNumber = rand.nextInt(6) + 1;
                 System.out.println("Rolled: " + randomNumber);
@@ -35,10 +34,9 @@ public class Dice {
         }
         sum = rollTotal;
         score.add(sum);
-return randomNumber;
     }
 
-    // Method for finding winner & adding to winners array
+    // Method for finding winnerIndex & adding to winners array
     public ArrayList<Integer> setWinner (){
 
         ArrayList<Integer> winnerWinner = new ArrayList<>();
@@ -77,7 +75,7 @@ return randomNumber;
            try {
                numberOfDice = menu.userKeyboard.nextInt();
                finish = true;
-            //totalDice(numberOfDice);
+
 
         }catch (InputMismatchException e) {
                System.out.println("Invalid input please try again.");
@@ -86,18 +84,6 @@ return randomNumber;
     }
 
 
-    // Method for reading totalRounds
-    /*public void userRounds (int totalRounds){
-        this.totalRounds = menu.userKeyboard.nextInt();
-
-    }*/
-
-
-    // Method for reading numberOfDice
-   /* public void totalDice (int numberOfDice){
-
-        this.numberOfDice = menu.userKeyboard.nextInt();
-    }*/
 
 
 }}

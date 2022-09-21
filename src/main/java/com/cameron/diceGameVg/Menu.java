@@ -5,8 +5,6 @@ public class Menu {
     Scanner userKeyboard = new Scanner(System.in); // Scanner Import
      // Instantiation
 
-
-
     boolean exit; // Loop Variable
 
 
@@ -33,22 +31,23 @@ while (!exit) {
     public void menuSelections (){
         //Initialisation
        Players players = new Players();
-
+        //Variable declaration
         String choice = userKeyboard.next();
 
+        // Switch case for user choices
         switch (choice) {
             case "1":
-                players.playersArray();
+                players.playersArray();// Program starts with call of playersArray
 
                 break;
 
 
             case "0":
-                System.out.println("Thank you for playing Cameron´s Dice Game  ");
+                System.out.println("Thank you for playing Camerons Dice Game  "); //Game end message
                 System.exit(0);
                 break;
 
-        default:  System.out.println("Invalid Selection");
+        default:  System.out.println("Invalid Selection");// Default for wrong input
         }
 
 

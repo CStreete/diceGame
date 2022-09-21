@@ -16,7 +16,7 @@ public class Players {
     //Method for playersArray
     public void playersArray() {
 
-            printPlayerMessages();
+            printPlayerMessages();// Call print players message method
 
 
 
@@ -38,9 +38,6 @@ public class Players {
 
        printPlayerScores();//Call printPlayerScores Method
 
-
-
-
     }
 
     //Method for printing userInteraction
@@ -60,24 +57,8 @@ public class Players {
 
 
 
-        //numberOfUsers(numberOfPlayers);
-
         }
 
-
-
-
-
-
-
-
-// Method for reading numberOfPlayers
-    /*public void numberOfUsers (int numberOfPlayers){
-                this.numberOfPlayers = menu.userKeyboard.nextInt();
-
-
-
-    }*/
 
 
 // Method for each player roll
